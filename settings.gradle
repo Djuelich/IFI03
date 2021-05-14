@@ -1,0 +1,2 @@
+rootProject.name = "IFI03"
+include ':app'
