@@ -7,7 +7,7 @@ beiden Ausbildungsjahre der Elektrotechniker.</p>
 <h2>Projektbeschreibung</h2>
 <ul>
   <li>Entwicklung in Android Studios</li>
-  <li>Vollständige App wird in der README zum Download angehangen, sobald Meielenstein 0.1 erreicht ist</li> 
+  <li>Vollständige App wird in der README zum Download angehangen, sobald Meilenstein 0.1 erreicht ist</li> 
 </ul>
 
 <h2>Für Programmierer</h2>
