@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                setContentView(R.layout.activity_main_menu);
+                setContentView(R.layout.activity_main_menu_1);
             }
         }, 3000); //the time you want to delay in milliseconds
     }
