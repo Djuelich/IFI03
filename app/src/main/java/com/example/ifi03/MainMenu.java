@@ -3,40 +3,98 @@ package com.example.ifi03;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-public class MainMenu extends AppCompatActivity implements View.OnClickListener{
+public class MainMenu extends AppCompatActivity{
+
+    CardView it1;
+    CardView it2;
+    CardView it3;
+    CardView it4;
+    CardView it5;
+    CardView eng;
+    CardView pol;
+    CardView quiz;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu_1);
 
-        Button button1 = findViewById(R.id.button_2lj);
-        Button button2 = findViewById(R.id.button_3lj);
-        Button button3 = findViewById(R.id.button3);
-        Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
+        it1 = findViewById(R.id.menu_it1);
+        it2 = findViewById(R.id.menu_it2);
+        it3 = findViewById(R.id.menu_it3);
+        it4 = findViewById(R.id.menu_it4);
+        it5 = findViewById(R.id.menu_it5);
+        eng = findViewById(R.id.menu_eng);
+        pol = findViewById(R.id.menu_pol);
+        quiz = findViewById(R.id.menu_quiz);
 
-        button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
-        button4.setOnClickListener(this);
-        button5.setOnClickListener(this);
+        it1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
+
+        it2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
+
+        it3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
+
+        it4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
+
+        it5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
+
+        eng.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
+
+        pol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
+
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Clicked");
+            }
+        });
     }
 
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button_2lj:
-                setContentView(R.layout.activity_main_menu2);
-                break;
-            case R.id.button1:
-                setContentView(R.layout.activity_main_menu3);
-                break;
-
+        private void showToast(String message){
+            Toast.makeText(this, message,Toast.LENGTH_SHORT).show();
         }
-    }
+
+
 }
