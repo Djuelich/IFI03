@@ -1,14 +1,12 @@
 package com.example.ifi03;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
-public class MainMenu extends AppCompatActivity{
+public class MainMenu extends AppCompatActivity {
 
     CardView it1;
     CardView it2;
@@ -18,6 +16,7 @@ public class MainMenu extends AppCompatActivity{
     CardView eng;
     CardView pol;
     CardView quiz;
+
 
 
     @Override
@@ -37,64 +36,58 @@ public class MainMenu extends AppCompatActivity{
         it1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
 
         it2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
 
         it3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
 
         it4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
 
         it5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
 
         eng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
 
         pol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
 
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("Clicked");
+                Toast.makeText(getApplicationContext(),"Button was Clicked", Toast.LENGTH_LONG).show();
             }
         });
     }
-
-
-        private void showToast(String message){
-            Toast.makeText(this, message,Toast.LENGTH_SHORT).show();
-        }
-
 
 }
